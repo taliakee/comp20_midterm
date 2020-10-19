@@ -5,12 +5,28 @@ Assignments
 Home page: Talia\
 About Us/Mission: Endo\
 Adopt a Dog (includes form + validation): Ann-Marie\
+Dogs Available: Ann-Marie + Talia\
 Success Stories: Liana\
 Donate (form): Endo\
 Contact Us: Liana
-
-Hop-around: Talia + Ann-Marie\
-  • Includes going thru and making sure we meet each requirement in files
+  
+Code Reviewers: everyone!
+  
+PROCEDURES
+---------------
+Pull from main every time you begin working\
+  • If you need to merge main into your feature branch:\
+      
+      ``` 
+      git checkout main
+      git pull origin main
+      git checkout <feature branch>
+      git merge main
+      
+      ```
+      
+Create your own branch, work on it, make PR, merge once approved by another member\
+Every HTML has its own CSS + JS
 
 
 PROMPT
