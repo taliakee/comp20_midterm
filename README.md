@@ -1,4 +1,4 @@
-# comp20_midterm
+# BDE -- comp20_midterm
 
 Assignments
 -----------
