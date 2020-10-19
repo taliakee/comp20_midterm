@@ -28,6 +28,16 @@ Pull from main every time you begin working\
 Create your own branch, work on it, make PR, merge once approved by another member\
 Every HTML has its own CSS + JS
 
+COLOR SCHEMES
+--------------
+Blue: #50A6B3\
+Background color/off-white: #FAF3F6\
+Dark navy: #2A2F3F\
+Tan: #50A6B3\
+Green: #93A428
+
+Sizing: em (relative to font-size -- great for diff. screen sizes)
+
 
 PROMPT
 ----------------------------------------------------------------------------
