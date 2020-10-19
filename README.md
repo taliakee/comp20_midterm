@@ -2,14 +2,14 @@
 
 Assignments
 -----------
-Home page: Talia
-About Us/Mission: Endo
-Adopt a Dog (includes form + validation): Ann-Marie
-Success Stories: Liana
-Donate (form): Endo
+Home page: Talia\
+About Us/Mission: Endo\
+Adopt a Dog (includes form + validation): Ann-Marie\
+Success Stories: Liana\
+Donate (form): Endo\
 Contact Us: Liana
 
-Hop-around: Talia + Ann-Marie
+Hop-around: Talia + Ann-Marie\
   • Includes going thru and making sure we meet each requirement in files
 
 
