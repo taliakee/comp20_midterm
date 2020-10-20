@@ -8,10 +8,22 @@
     margin-top: 0em;
     margin-bottom: 0em;
     padding-top: 1em;
-    padding-bottom: 1em;
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Montserrat';
     text-transform: uppercase;
+}
+
+.underTitle {
+ 
+  text-align: center; 
+  background-color: #50A6B3; 
+  color: #FAF3F6;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding-bottom: 2em;
+  font-size: 25px;
+  font-family: 'Montserrat';
+
 }
 
 .topnav {
