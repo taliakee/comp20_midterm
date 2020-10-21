@@ -56,12 +56,41 @@
 .firstBlock {
     background-color: #BFA082;
     margin-top: 2em;
-    margin-left: 7em;
-    margin-right: 7em;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    margin-bottom: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: center;
     font-family: 'Roboto';
+    color: #FAF3F6;
+    font-size: 20px;
+}
+
+.homeDog {
+  background-color: #BFA082;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}
+
+.storyButton {
+  background-color: #93A428;
+  width: 70%;
+  border: none;
+  color: #FAF3F6;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  margin-bottom: 0px;
+
+}
+.storyDescription {
+  background-color: #93A428;
+  border: none;
+  color: #FAF3F6;
+  font-family: 'Montserrat';
+  font-size: 15px;
 }
 
 footer {
