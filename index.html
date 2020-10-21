@@ -3,6 +3,7 @@
     <head>
         <title>B.D.E. Home Page</title>
         <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <style>
         body{
@@ -10,6 +11,12 @@
         }
     </style>
     <body>
+        <script>
+            $(document).ready(function(){
+              $("#dogButton").click(function(){
+                $("p").toggle();
+              })});
+            </script>
         <h1 class="title">B.D.E.</h1>
         <div>
             <a href="index.html">
@@ -27,8 +34,31 @@
             <a href="">Contact Us</a>
         </div>
         <section class="firstBlock">
-            temporary text
+            Find your furry companion <p style="color: #2A2F3F;"> &#9901 </p> Save a life
         </section>
+        <div class="homeDog">
+            <h2 style="font-family:'Montserrat'; color: #FAF3F6; text-align: center; font-size: 40px;">
+                Montly Spotlight: Bella
+            </h2>
+            <img src="home_dog.jpg" style="width: 70%; display: block; margin-left: auto; margin-right: auto;">
+            <div style="text-align: center; margin-top: 1em;">
+                <input id="dogButton" type="button" value="Click to read Bella's Story" class="storyButton">
+                <div style="background-color: #93A428; text-align: center; margin-left: auto; margin-right: auto; width: 70%;"> 
+                    <p style="color: #FAF3F6; font-family: 'Roboto';">In 2017, Bella was found under a bridge covered in sewer water in Boston, MA. When we found her,
+                        she was covered in bruises, scratch marks and had swollen ankles. Bella fell victim to 
+                        domestic abuse and showed signs of malnourishment. She had a long journey ahead for her 
+                        physical and mental recovery. <br/> <br/>
+                        One Friday afternoon, the O'Reilly family visited our shelter, hoping to rescue a young/middle-aged 
+                        dog. They met Bella and instantly fell in love with her sweet face and bubbly personality. At that
+                        point, Bella had completed her three months of therapy and was ready to join her new family. 
+                        <br/><br/>
+                        Since that Friday afternoon, Bella has been a lovely addition to the O'Reilley family for the past three years.
+                        She loves playing in the New England snow and snuggles with the kids during their weekly Harry Potter
+                        movie marathons. Bella is happy, healthy, and safe — everything we could hope for. 
+                    </p>
+                </div>   
+            </div>
+        </div>
         <footer>
            &#169; Copyright 2020 BDE
         </footer>
