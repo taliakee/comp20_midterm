@@ -53,6 +53,27 @@
     color:#2A2F3F
   }
 
+.firstBlock {
+    background-color: #BFA082;
+    margin-top: 2em;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.dogPhoto {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    text-align: left;
+}
 
 footer {
   text-align: center; 
