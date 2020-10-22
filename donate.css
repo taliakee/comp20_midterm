@@ -73,6 +73,30 @@
 
 form {
     text-align: left;
+    background-color: #FAF3F6;
+    padding: 3em;
+    margin: 2em;
+}
+
+input[type=text] {
+    margin-top: 1em;
+}
+
+.submit {
+    background-color: #2A2F3F;
+    border: none;
+    color: #FAF3F6;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+.submit:hover {
+    background-color: #93A428;
+
 }
 
 footer {
