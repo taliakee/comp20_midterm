@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>B.D.E. Home Page</title>
+        <title>B.D.E. Dogs Available</title>
         <link rel="stylesheet" href="dogs_avail.css">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
     </head>
@@ -9,12 +9,37 @@
         body{
             background-color: #FAF3F6;
         }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 500px) {
+            .column {
+                width: 100%;
+            }
+        }
     </style>
     <body>
         <h1 class="title">B.D.E.</h1>
         <div>
             <a href="index.html">
-            <img src="../images/logo.jpg" style="display: block; float: left; width: 12%; position: absolute; top: 4em; left: 4em">
+                <img src="../images/logo.jpg" style="display: block; float: left; width: 12%; position: absolute; top: 4em; left: 4em">
+
             </a>
         </div>
         <h2 class="underTitle">Big Dog Energy</h2>
@@ -27,6 +52,20 @@
             <a href="donate.html">Donate</a>
             <a href="contact.html">Contact Us</a>
         </div>
+
+        <div class="row">
+            <div class="column">
+              <img src="../images/home_dog.jpg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="../images/t_slide.jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="../images/s_slide.jpg" alt="Mountains" style="width:100%">
+            </div>
+          </div>
+
+
         <footer>
            &#169; Copyright 2020 BDE
         </footer>
