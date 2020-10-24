@@ -2,8 +2,8 @@
 
 .title {
 
-    text-align: center; 
-    background-color: #50A6B3; 
+    text-align: center;
+    background-color: #50A6B3;
     color: #FAF3F6;
     margin-top: 0em;
     margin-bottom: 0em;
@@ -14,9 +14,9 @@
 }
 
 .underTitle {
- 
-  text-align: center; 
-  background-color: #50A6B3; 
+
+  text-align: center;
+  background-color: #50A6B3;
   color: #FAF3F6;
   margin-top: 0em;
   margin-bottom: 0em;
@@ -31,7 +31,7 @@
     overflow: hidden;
     padding-bottom: 0.5em;
   }
-  
+
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
@@ -42,19 +42,68 @@
     font-family: 'Roboto';
     font-size: 1.3em;
   }
-  
+
   /* Change the color of links on hover */
   .topnav a:hover {
     color:#2A2F3F
   }
-  
+
   /* Add a color to the active/current link */
   .topnav a.active {
     color:#2A2F3F
   }
 
+.success_stories {
+    background-color: #2A2F3F;
+    color: #FAF3F6;
+}
+
+.story_one {
+    background-color: #93A428;
+    color: #FAF3F6;
+}
+
+.story_two {
+    background-color: #BFA082;
+    color: inherit;
+}
+
+.story_three {
+    background-color: #50A6B3;
+    color: inherit;
+}
+
+.story_four {
+    background-color: #93A428;
+    color: #FAF3F6;
+}
+
+.success_stories, .story_one, .story_two, .story_three, .story_four {
+    text-align: center;
+    display: block;
+    margin-top: 2em;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.success_stories a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: inherit;
+}
+
+.success_stories a:hover {
+    color: #50A6B3;
+}
+
 
 footer {
-  text-align: center; 
+  text-align: center;
   margin-top: 5em;
 }
