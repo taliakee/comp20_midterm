@@ -1,6 +1,6 @@
 # BDE -- comp20_midterm
 
-Website Link: https://taliakee.github.io/comp20_midterm/index.html
+Website Link: https://taliakee.github.io/comp20_midterm/pages/index.html
 
 Assignments
 -----------
