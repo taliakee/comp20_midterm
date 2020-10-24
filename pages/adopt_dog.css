@@ -53,6 +53,48 @@
     color:#2A2F3F
   }
 
+.content {
+    /* background-color: #93A428; */
+    background-color: #BFA082;
+    color: #FAF3F6;
+    margin-top: 2em;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+form {
+    text-align: left;
+    color: #000;
+    background-color: #FAF3F6;
+    padding: 3em;
+    margin: 2em;
+}
+
+input[type=text] {
+    margin-top: 1em;
+}
+
+.submit {
+    background-color: #2A2F3F;
+    border: none;
+    color: #FAF3F6;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.submit:hover {
+    background-color: #93A428;
+
+}
 
 footer {
   text-align: center; 
