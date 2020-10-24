@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>B.D.E. Home Page</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        body{
+            background-color: #FAF3F6;
+        }
+    </style>
+    <body>
+        <script>
+            $(document).ready(function(){
+              $("#dogButton").click(function(){
+                $("p").toggle();
+              })});
+
+        </script>
+        <h1 class="title">B.D.E.</h1>
+        <div>
+            <a href="index.html">
+            <img src="../images/logo.jpg" style="display: block; float: left; width: 12%; position: absolute; top: 4em; left: 4em">
+            </a>
+        </div>
+        <h2 class="underTitle">Big Dog Energy</h2>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="adopt_dog.html">Adopt a Dog</a>
+            <a href="dogs_avail.html">Dogs Available</a>
+            <a href="success.html">Success Stories</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div style="margin-top: 0em; background-color: #BFA082;">
+            <img class="mySlides" src="../images/f_slide.jpg">
+            <img class="mySlides" src="../images/s_slide.jpg">
+            <img class="mySlides" src="../images/t_slide.jpg">
+        </div>
+        <script>
+            var slideIndex = 0;
+            carousel();
+            
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 3000); // Change image every 2 seconds
+            }
+
+        </script>
+        <section class="firstBlock">
+            Find your furry companion <p style="color: #2A2F3F;"> &#9901 </p> Save a life
+        </section>
+        <div class="homeDog">
+            <h2 style="font-family:'Montserrat'; color: #FAF3F6; text-align: center; font-size: 40px;">
+                Montly Spotlight: Bella
+            </h2>
+            <img src="../images/home_dog.jpg" style="width: 70%; display: block; margin-left: auto; margin-right: auto;">
+            <div style="text-align: center; margin-top: 1em;">
+                <input id="dogButton" type="button" value="Click to read Bella's Story" class="storyButton">
+                <div style="background-color: #50A6B3; text-align: center; margin-left: auto; margin-right: auto; width: 70%;"> 
+                    <p style="color: #FAF3F6; font-family: 'Roboto'; display: none;">In 2017, Bella was found under a bridge covered in sewer water in Boston, MA. When we found her,
+                        she was covered in bruises, scratch marks and had swollen ankles. Bella fell victim to 
+                        domestic abuse and showed signs of malnourishment. She had a long journey ahead for her 
+                        physical and mental recovery. <br/> <br/>
+                        One Friday afternoon, the O'Reilly family visited our shelter, hoping to rescue a young/middle-aged 
+                        dog. They met Bella and instantly fell in love with her sweet face and bubbly personality. At that
+                        point, Bella had completed her three months of therapy and was ready to join her new family. 
+                        <br/><br/>
+                        Since that Friday afternoon, Bella has been a lovely addition to the O'Reilley family for the past three years.
+                        She loves playing in the New England snow and snuggles with the kids during their weekly Harry Potter
+                        movie marathons. Bella is happy, healthy, and safe — everything we could hope for. 
+                    </p>
+                </div>   
+            </div>
+        </div>
+        <footer>
+           &#169; Copyright 2020 BDE
+        </footer>
+    </body>
+</html>
