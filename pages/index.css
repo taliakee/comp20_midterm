@@ -62,11 +62,7 @@
 
 .firstBlock {
     background-color: #50A6B3;
-    /* margin-top: 2em; */
-    /* margin-bottom: 2em; */
-    /* margin-left: 4em; */
-    /* margin-right: 4em; */
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 1em;
     text-align: center;
     font-family: 'Roboto';
