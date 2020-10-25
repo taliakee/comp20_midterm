@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<meta meta charset = "UTF-8" />
 <html>
     <head>
         <title>B.D.E. Home Page</title>
         <link rel="stylesheet" href="contact.css">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+        <meta charset = "UTF-8" />
     </head>
     <style>
         body{
@@ -24,7 +24,7 @@
             <a href="about_us.html">About Us</a>
             <a href="adopt_dog.html">Adopt a Dog</a>
             <a href="dogs_avail.html">Dogs Available</a>
-            <a class="active" href="success.html">Success Stories</a>
+            <a href="success.html">Success Stories</a>
             <a href="donate.html">Donate</a>
             <a class="active" href="contact.html">Contact Us</a>
         </div>
@@ -37,22 +37,22 @@
         <div class="form_div" id="form" style="text-align: left">
             <form name="contact">
                 <label for="fname">First name: </label>
-                <input type="text" name="fname" id="fname" value="" required>
+                <input type="text" name="fname" id="fname" value="" required />
                 <br>
                 <label for="lname">Last name: </label>
-                <input type="text" name="lname" id="lname" value="" required>
+                <input type="text" name="lname" id="lname" value="" required />
                 <br>
                 <label for="email">Email address: </label>
-                <input type="email" name="email" id="email" value="" required size="40">
+                <input type="email" name="email" id="email" value="" required size="40" />
                 <br>
                 <label for="phone">Phone number: </label>
-                <input type="tel" name="phone" id="phone" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <input type="tel" name="phone" id="phone" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
                 <br><br>
 
                 <textarea name="message" required placeholder="Write your message here" cols="80" rows="10" form="contact" required></textarea>
                 <br><br>
 
-                <input type="button" name="" value="Submit" class="submit" onclick=submitForm()>
+                <input type="submit" name="" value="Submit" class="submit" onclick=submitForm()>
             </form>
         </div>
 
