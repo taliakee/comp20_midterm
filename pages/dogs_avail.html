@@ -69,64 +69,60 @@
             <a href="donate.html">Donate</a>
             <a href="contact.html">Contact Us</a>
         </div>
+        <script>
+            function show_info(dog_num) {
+                var x = document.getElementById("dog" + dog_num);
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+
+        </script>
         <div class="row">
             <div class="column">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <img src="../images/cody.jpg" alt="Snow" style="width:100%;">                      
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Cody</h2>
-                        <p>Age: 4 <br/> 
-                           Breed: Australian Koolie <br/>
-                           Adult Height: 20" <br/>
-                           Adult Weight: 30lbs - 50lbs <br/>
-                           Personality: high energy, active, good with families <br/>
-                           Living conditions: Needs large backyards <br/>
-                           Good with other pets: Yes <br/>
-                           Hypo-allergnic: No <br/>
-                           Life Expectancy: 18+ years
-                        </p>
-                    </div>
-                    </div>
+                <img src="../images/cody.jpg" alt="Snow" style="width:100%;" onclick="">  
+                <div class="textBlockContainer">
+                    <input id="dogButton" type="button" value="Click to read Cody's Info" class="storyButton" onclick="show_info(1)">
+                    <div class="textBlockBackground"> 
+                        <div class="textBlock" id="dog1">
+                            <h2>Cody</h2>
+                            <p>Age: 4 <br/> 
+                                Breed: Australian Koolie <br/>
+                                Adult Height: 20" <br/>
+                                Adult Weight: 30lbs - 50lbs <br/>
+                                Personality: high energy, active, good with families <br/>
+                                Living conditions: Needs large backyards <br/>
+                                Good with other pets: Yes <br/>
+                                Hypoallergenic: No <br/>
+                                Life Expectancy: 18+ years
+                            </p>
+                        </div>
+                    </div> 
                 </div>
             </div>
             <div class="column">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <img src="../images/charlie.jpg" alt="Forest" style="width:100%;">                      
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Charlie</h2>
-                        <p> Age: 1 <br/> 
-                            Breed: White Labrador <br/>
-                            Adult Height: 22.5" - 24.5" <br/>
-                            Adult Weight: 65lbs - 80lbs <br/>
-                            Personality: Loyal, athletic, affectionate <br/>
-                            Living conditions: Needs large spaces <br/>
-                            Good with other pets: Yes <br/>
-                            Hypo-allergnic: No <br/>
-                            Life Expectancy: 10 - 12 years
-                         </p>
-                    </div>
-                    </div>
+                <img src="../images/charlie.jpg" alt="Forest" style="width:100%;"> 
+                <div class="textBlockContainer">
+                    <input id="dogButton" type="button" value="Click to read Charlie's Info" class="storyButton" onclick="show_info(2)">
+                    <div class="textBlockBackground"> 
+                        <div class="textBlock" id="dog2">
+                            <h2>Charlie</h2>
+                            <p> Age: 1 <br/> 
+                                Breed: White Labrador <br/>
+                                Adult Height: 22.5" - 24.5" <br/>
+                                Adult Weight: 65lbs - 80lbs <br/>
+                                Personality: Loyal, athletic, affectionate <br/>
+                                Living conditions: Needs large spaces <br/>
+                                Good with other pets: Yes <br/>
+                                Hypoallergenic: No <br/>
+                                Life Expectancy: 10 - 12 years
+                             </p>
+                        </div>
+                    </div> 
                 </div>
             </div>
-            <!-- <div class="column">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <img src="../images/s_slide.jpg" alt="Mountains" style="width:100%">
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Paris</h2>
-                        <p>What an amazing city</p>
-                    </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
         <div>&nbsp</div>
         <div>&nbsp</div>
