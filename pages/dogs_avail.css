@@ -54,15 +54,19 @@
   }
 
 .storyButton {
-    background-color: #FAF3F6;
+    background-color: #2A2F3F;
     width: 70%;
     border: none;
-    color: #2A2F3F;
+    color: #FAF3F6;
     font-family: 'Montserrat';
     font-size: 20px;
     margin-bottom: 0px;
-  
+
   }
+
+.storyButton:hover {
+  opacity: 0.9;
+}
 
 .textBlockContainer {
 
