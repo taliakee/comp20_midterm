@@ -2,8 +2,8 @@
 
 .title {
 
-    text-align: center; 
-    background-color: #50A6B3; 
+    text-align: center;
+    background-color: #50A6B3;
     color: #FAF3F6;
     margin-top: 0em;
     margin-bottom: 0em;
@@ -14,9 +14,9 @@
 }
 
 .underTitle {
- 
-  text-align: center; 
-  background-color: #50A6B3; 
+
+  text-align: center;
+  background-color: #50A6B3;
   color: #FAF3F6;
   margin-top: 0em;
   margin-bottom: 0em;
@@ -31,7 +31,7 @@
     overflow: hidden;
     padding-bottom: 0.5em;
   }
-  
+
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
@@ -42,19 +42,76 @@
     font-family: 'Roboto';
     font-size: 1.3em;
   }
-  
+
   /* Change the color of links on hover */
   .topnav a:hover {
     color:#2A2F3F
   }
-  
+
   /* Add a color to the active/current link */
   .topnav a.active {
     color:#2A2F3F
   }
 
+.contact {
+    background-color: #BFA082
+}
+
+.contact a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: inherit;
+}
+
+.contact a:hover {
+    color: #FAF3F6;
+}
+
+.form_div {
+    text-align: left;
+    background-color: #93A428;
+    font-family: 'Roboto';
+}
+
+input[type=text], input[type=email], input[type=tel] {
+    margin-top: 1em;
+}
+
+.contact, .form_div {
+    text-align: center;
+    display: block;
+    margin-top: 2em;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 8em;
+    padding-right: 8em;
+    line-height: 150%;
+    font-family: 'Roboto';
+}
+
+textarea {
+    font-family: 'Roboto'
+}
+
+.submit {
+    background-color: #2A2F3F;
+    border: none;
+    color: #FAF3F6;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.submit:hover {
+    background-color: #50A6B3;
+}
+
 
 footer {
-  text-align: center; 
+  text-align: center;
   margin-top: 5em;
 }
