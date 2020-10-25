@@ -15,16 +15,33 @@
         }
 
         .column {
-            float: left;
-            width: 33.33%;
+            /* flex: 33.33%; */
+            flex: 50%;
             padding: 5px;
         }
 
-        /* Clearfix (clear floats) */
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
+        .row {
+            display: flex;
+        }
+
+        h2 {
+            background-color: #BFA082;
+            color: #FAF3F6;
+            font-family: 'Montserrat';
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+
+        p {
+            background-color: #50A6B3;
+            color: #FAF3F6;
+            font-family: 'Roboto';
+            text-align: left;
+            padding-left: 1em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            line-height: 1.5em;
+            font-size: 14px;
         }
 
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -52,20 +69,76 @@
             <a href="donate.html">Donate</a>
             <a href="contact.html">Contact Us</a>
         </div>
-
         <div class="row">
             <div class="column">
-              <img src="../images/home_dog.jpg" alt="Snow" style="width:100%">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../images/cody.jpg" alt="Snow" style="width:100%;">                      
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Cody</h2>
+                        <p>Age: 4 <br/> 
+                           Breed: Australian Koolie <br/>
+                           Adult Height: 20" <br/>
+                           Adult Weight: 30lbs - 50lbs <br/>
+                           Personality: high energy, active, good with families <br/>
+                           Living conditions: Needs large backyards <br/>
+                           Good with other pets: Yes <br/>
+                           Hypo-allergnic: No <br/>
+                           Life Expectancy: 18+ years
+                        </p>
+                    </div>
+                    </div>
+                </div>
             </div>
             <div class="column">
-              <img src="../images/t_slide.jpg" alt="Forest" style="width:100%">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../images/charlie.jpg" alt="Forest" style="width:100%;">                      
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Charlie</h2>
+                        <p> Age: 1 <br/> 
+                            Breed: White Labrador <br/>
+                            Adult Height: 22.5" - 24.5" <br/>
+                            Adult Weight: 65lbs - 80lbs <br/>
+                            Personality: Loyal, athletic, affectionate <br/>
+                            Living conditions: Needs large spaces <br/>
+                            Good with other pets: Yes <br/>
+                            Hypo-allergnic: No <br/>
+                            Life Expectancy: 10 - 12 years
+                         </p>
+                    </div>
+                    </div>
+                </div>
             </div>
-            <div class="column">
-              <img src="../images/s_slide.jpg" alt="Mountains" style="width:100%">
-            </div>
-          </div>
-
-
+            <!-- <div class="column">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../images/s_slide.jpg" alt="Mountains" style="width:100%">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Paris</h2>
+                        <p>What an amazing city</p>
+                    </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div>&nbsp</div>
+        <div>&nbsp</div>
+        <div>&nbsp</div>
+        <div>&nbsp</div>
+        <div>&nbsp</div>
+        <div>&nbsp</div>
+        <div>&nbsp</div>
+        <div>&nbsp</div>
+        <div>&nbsp</div>
+        <div>&nbsp</div>
+        <div>&nbsp</div>
         <footer>
            &#169; Copyright 2020 BDE
         </footer>
