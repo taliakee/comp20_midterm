@@ -46,7 +46,7 @@
                 <input type="email" name="email" id="email" value="" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required size="40" />
                 <br>
                 <label for="phone">Phone number: </label>
-                <input type="tel" name="phone" id="phone" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <input type="tel" name="phone" id="phone" value="" pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required />
                 <br><br>
 
                 <textarea name="message" id="message"required placeholder="Write your message here" cols="80" rows="10" form="contact" required></textarea>
@@ -68,11 +68,11 @@
                 alert("Last name must be filled out");
                 return false;
             }
-            if (document.getElementById("email").value == "" || document.getElementById("email").value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+            if (document.getElementById("email").value == "" || !document.getElementById("email").value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/im)) {
                 alert("Please enter a valid email address");
                 return false;
             }
-            if (document.getElementById("phone").value == "" || document.getElementById("phone").value.match(/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/)) {
+            if (document.getElementById("phone").value == "" || !document.getElementById("phone").value.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im)) {
                 alert("Please enter a valid phone number");
                 return false;
             }
