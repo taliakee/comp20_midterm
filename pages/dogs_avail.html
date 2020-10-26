@@ -101,21 +101,17 @@
         </div>
 
         <script language="javascript">
-        window.onload =
-        function()
-        {
-            document.getElementById("adopt-button").onclick =
-            function()
+            function adoptButton()
             {
-            	window.location.href = "adopt_dog.html";
+                
+                window.location.href = "adopt_dog.html";
             }
-        }
         </script>
 
         <div class="adopt-link">
             Interested in adopting a dog? Please fill out our adopt a dog form!
             <br /><br />
-            <input type="button" value="Adopt a Dog &raquo;" id="adopt-button">
+            <input type="button" value="Adopt a Dog &raquo;" id="adopt-button" onsubmit="adoptButton()">
         </div>
 
         <script>

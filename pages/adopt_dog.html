@@ -76,7 +76,6 @@
         <script language="javascript">
             function submitForm() 
             {
-                console.log("SUBMIT FORM")
                 if (validForm()) {
                     var dog = document.getElementById("dog").value
                     dog = dog.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;')
@@ -95,7 +94,6 @@
 
             function validForm()
             {
-                console.log("CALLED")
                 var dog = document.getElementById("dog").value
                 var firstName = document.getElementById("firstName").value 
                 var lastName = document.getElementById("lastName").value 
