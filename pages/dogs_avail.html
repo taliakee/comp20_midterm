@@ -46,6 +46,35 @@
             font-size: 14px;
         }
 
+        .adopt-link { 
+            background-color: #BFA082;
+            color: #2A2F3F;
+            margin-top: 2em;
+            margin-left: 7em;
+            margin-right: 7em;
+            margin-bottom: 2em;
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+            padding-left: 3em;
+            padding-right: 3em;
+            text-align: center;
+            font-family: 'Roboto';
+        }
+
+        #adopt-button {
+            background-color: #FAF3F6;
+            color: #2A2F3F;
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Roboto';
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
             @media screen and (max-width: 500px) {
             .column {
@@ -70,6 +99,25 @@
             <a href="donate.html">Donate</a>
             <a href="contact.html">Contact Us</a>
         </div>
+
+        <script language="javascript">
+        window.onload =
+        function()
+        {
+            document.getElementById("adopt-button").onclick =
+            function()
+            {
+            	window.location.href = "adopt_dog.html";
+            }
+        }
+        </script>
+
+        <div class="adopt-link">
+            Interested in adopting a dog? Please fill out our adopt a dog form!
+            <br /><br />
+            <input type="button" value="Adopt a Dog &raquo;" id="adopt-button">
+        </div>
+
         <script>
             function show_info(dog_num) {
                 var x = document.getElementById("dog" + dog_num);
@@ -83,17 +131,17 @@
         </script>
         <div class="row">
             <div class="column">
-                <img src="../images/cody.jpg" alt="Snow" style="width:100%;" onclick="">  
+                <img src="../images/cody.jpg" alt="Cody" style="width:100%;" onclick="">  
                 <div class="textBlockContainer">
                     <input id="dogButton" type="button" value="Click to read Cody's Info" class="storyButton" onclick="show_info(1)">
                     <div class="textBlockBackground"> 
                         <div class="textBlock" id="dog1">
                             <h2>Cody</h2>
-                            <p>Age: 4 <br/> 
+                            <p>Age: 4 years <br/> 
                                 Breed: Australian Koolie <br/>
                                 Adult Height: 20" <br/>
-                                Adult Weight: 30lbs - 50lbs <br/>
-                                Personality: high energy, active, good with families <br/>
+                                Adult Weight: 30 lbs - 50 lbs <br/>
+                                Personality: Energetic, active, good with families <br/>
                                 Living conditions: Needs large backyards <br/>
                                 Good with other pets: Yes <br/>
                                 Hypoallergenic: No <br/>
@@ -104,16 +152,16 @@
                 </div>
             </div>
             <div class="column">
-                <img src="../images/charlie.jpg" alt="Forest" style="width:100%;"> 
+                <img src="../images/charlie.jpg" alt="Charlie" style="width:100%;"> 
                 <div class="textBlockContainer">
                     <input id="dogButton" type="button" value="Click to read Charlie's Info" class="storyButton" onclick="show_info(2)">
                     <div class="textBlockBackground"> 
                         <div class="textBlock" id="dog2">
                             <h2>Charlie</h2>
-                            <p> Age: 1 <br/> 
+                            <p> Age: 1 year <br/> 
                                 Breed: White Labrador <br/>
                                 Adult Height: 22.5" - 24.5" <br/>
-                                Adult Weight: 65lbs - 80lbs <br/>
+                                Adult Weight: 65 lbs - 80 lbs <br/>
                                 Personality: Loyal, athletic, affectionate <br/>
                                 Living conditions: Needs large spaces <br/>
                                 Good with other pets: Yes <br/>
@@ -123,6 +171,75 @@
                         </div>
                     </div> 
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="../images/jasper.jpg" alt="Jasper" style="width:100%;" onclick="">  
+                <div class="textBlockContainer">
+                    <input id="dogButton" type="button" value="Click to read Jasper's Info" class="storyButton" onclick="show_info(3)">
+                    <div class="textBlockBackground"> 
+                        <div class="textBlock" id="dog3">
+                            <h2>Jasper</h2>
+                            <p>Age: 10 months<br/> 
+                                Breed: American Staffordshire Terrier <br/>
+                                Adult Height: 18" - 20" <br/>
+                                Adult Weight: 62 lbs – 88 lbs  <br/>
+                                Personality: Playful, friendly, energetic <br/>
+                                Living conditions: Needs a crate to sleep in, needs to be potty trained <br/>
+                                Good with other pets: Yes <br/>
+                                Hypoallergenic: No <br/>
+                                Life Expectancy: 12 - 16 years
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="column">
+                <img src="../images/baxter.jpg" alt="Baxter" style="width:100%;"> 
+                <div class="textBlockContainer">
+                    <input id="dogButton" type="button" value="Click to read Baxter's Info" class="storyButton" onclick="show_info(4)">
+                    <div class="textBlockBackground"> 
+                        <div class="textBlock" id="dog4">
+                            <h2>Baxter</h2>
+                            <p> Age: 1.5 years <br/> 
+                                Breed: French Bulldog <br/>
+                                Adult Height: 11" - 12" <br/>
+                                Adult Weight: 20 lbs - 28 lbs <br/>
+                                Personality: Lazy, cuddly, affectionate <br/>
+                                Living conditions: Needs lots of cozy blankets, preferably allowed on couches and beds <br/>
+                                Good with other pets: Yes <br/>
+                                Hypoallergenic: No <br/>
+                                Life Expectancy: 10 - 14 years
+                             </p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="../images/henry.jpg" alt="Snow" style="width:100%;" onclick="">  
+                <div class="textBlockContainer">
+                    <input id="dogButton" type="button" value="Click to read Henry's Info" class="storyButton" onclick="show_info(5)">
+                    <div class="textBlockBackground"> 
+                        <div class="textBlock" id="dog5">
+                            <h2>Henry</h2>
+                            <p>Age: 8 years<br/> 
+                                Breed: Golden Retriever <br/>
+                                Adult Height: 18" - 20" <br/>
+                                Adult Weight: 65 lbs – 75 lbs  <br/>
+                                Personality: Loyal, loving, a little old but a sweetheart <br/>
+                                Living conditions: Needs dog bed, needs to be taken on regular long walks <br/>
+                                Good with other pets: Yes <br/>
+                                Hypoallergenic: No <br/>
+                                Life Expectancy: 10 - 12 years
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="column">
             </div>
         </div>
         <div>&nbsp</div>
