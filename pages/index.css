@@ -89,6 +89,15 @@
 
 }
 
+.rescue {
+  background-color: #2A2F3F; 
+  color: #FAF3F6; 
+  font-family: 'Montserrat';
+  text-align: left;
+  margin-top: 0px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 
 footer {
   text-align: center; 
