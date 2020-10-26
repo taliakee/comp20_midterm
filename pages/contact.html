@@ -35,7 +35,7 @@
         </div>
 
         <div class="form_div" id="form" style="text-align: left">
-            <form name="contact">
+            <form name="contact" onsubmit="submitForm()">
                 <label for="fname">First name: </label>
                 <input type="text" name="fname" id="fname" value="" required />
                 <br>
@@ -52,7 +52,7 @@
                 <textarea name="message" id="message"required placeholder="Write your message here" cols="80" rows="10" form="contact" required></textarea>
                 <br><br>
 
-                <input type="submit" name="" value="Submit" class="submit" onclick=submitForm()>
+                <input type="submit" name="" value="Submit" class="submit">
             </form>
         </div>
 
