@@ -75,6 +75,21 @@
             cursor: pointer;
         }
 
+        #adopt-button:hover {
+            /* background-color: #FAF3F6;
+            color: #2A2F3F;
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Roboto';
+            font-size: 16px;
+            margin: 4px 2px; */
+            cursor: pointer;
+            background-color: #D8D0F8;
+        }
+
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
             @media screen and (max-width: 500px) {
             .column {
@@ -101,17 +116,21 @@
         </div>
 
         <script language="javascript">
-            function adoptButton()
+        window.onload =
+        function()
+        {
+            document.getElementById("adopt-button").onclick =
+            function()
             {
-                
-                window.location.href = "adopt_dog.html";
+            	window.location.href = "adopt_dog.html";
             }
+        }
         </script>
 
         <div class="adopt-link">
             Interested in adopting a dog? Please fill out our adopt a dog form!
             <br /><br />
-            <input type="button" value="Adopt a Dog &raquo;" id="adopt-button" onsubmit="adoptButton()">
+            <input type="button" value="Adopt a Dog &raquo;" id="adopt-button">
         </div>
 
         <script>
