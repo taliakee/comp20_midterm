@@ -6,21 +6,6 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset = "UTF-8" />
-        <script language="javascript">
-
-            window.onload =
-                function()
-                {
-                    document.getElementById("submit").onclick =
-                        function() 
-                        {
-                            console.log("CLICKED")
-                            var message = "Thank you for adopting a dog! We will be in touch shortly."
-
-                            document.getElementById("adoption-thank-you").innerHTML = message;
-                        }
-                }
-        </script>
     </head>
     <style type="text/css">
         body{
@@ -45,42 +30,135 @@
         </div>
         <section class="content">
             <h2>Adopt a Dog!</h2>
-            <!-- <img src="../images/" alt="[insert dog]" class="dogPhoto"> -->
-            <form name="adopt_form">
-                <label for="dog">Name of dog you would like to adopt:</label>
-                    <input type="text" id="dog" class="information" name="dog" required="1"><br/>
-                <p></p>
-                <label for="firstName">First name: </label>
-                    <input type="text" id="firstName" class="information" name="firstName" required="1"><br/>
-                <label for="lastName">Last name: </label>
-                    <input type="text" id="lastName" class="information" name="lastName" required="1"><br/>
-                <label for="email">Email address: </label>
-                    <input type="text" id="email" class="information" name="email" required="1"><br/>
-                <label for="phone">Phone number: </label>
-                    <input type="text" id="phone" class="information" name="phone" required="1"><br />
-                <label for="address">Address: </label>
-                    <input type="text" id="address" class="information" name="address" required="1"><br/>
-                <label for="address">City: </label>
-                    <input type="text" id="city" class="information" name="city" required="1">
-                <label for="address">State: </label>
-                    <input type="text" id="state" class="information" name="state" required="1">
-                <label for="zip">Zip code: </label>
-                    <input type="number" id="zip" class="information" name="zip" required="1"><br/>
-                <br/><br/>
-                Do you currently have any pets? <br/>
-                <input type="radio" id="yes" name="pets" value="yes" required="1">
-                <label for="yes">Yes</label><br/>
-                <input type="radio" id="no" name="pets" value="no" required="1">
-                <label for="no">No</label><br/>
-                If so, what animal(s)? <input type="text" id="pets" name="pets">
-                <br/><br/>
-                By checking this box you acknowledge that you have read and agree to our Terms & Conditions. &nbsp;
-                <input type="checkbox" id="terms" name="terms" value="checked">
-                <p></p>
-                <input type="button" id="submit" class="submit" value="Submit &raquo;">
-            </form>
-            <div id="adoption-thank-you"></div>
+            <div id="adopt-form">
+                <form name="adopt_form" onsubmit="submitForm()">
+                    <label for="dog">Name of dog you would like to adopt *</label>
+                        <input type="text" id="dog" class="information" name="dog" value="" required /><br/>
+                    <p></p>
+                    <label for="firstName">First name: *</label>
+                        <input type="text" id="firstName" class="information" name="firstName" value="" required /><br/>
+                    <label for="lastName">Last name: *</label>
+                        <input type="text" id="lastName" class="information" name="lastName" value="" required /><br/>
+                    <label for="email">Email address: *</label>
+                        <input type="text" id="email" class="information" name="email" value="" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required /><br/>
+                    <label for="phone">Phone number: *</label>
+                        <input type="number" id="phone" class="information" name="phone" value="" pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required /><br />
+                    <label for="address">Address: *</label>
+                        <input type="text" id="address" class="information" name="address" value="" required /><br/>
+                    <label for="city">City: *</label>
+                        <input type="text" id="city" class="information" name="city" value="" required />
+                    <label for="state">State: *</label>
+                        <input type="text" id="state" class="information" name="state" value="" required /><br />
+                    <label for="zip">Zip code: *</label>
+                        <input type="number" id="zip" class="information" name="zip" value="" required /><br/>
+                    
+                    <br/><br/>
+
+                    Do you currently have any pets? *<br/>
+                    <input type="radio" id="yes" name="pets" value="" required />
+                    <label for="yes">Yes</label><br/>
+                    <input type="radio" id="no" name="pets" value="" required />
+                    <label for="no">No</label><br/>
+                    If so, what animal(s)? <input type="text" id="pets" name="pets">
+                    
+                    <br/><br/>
+
+                    By checking this box you acknowledge that you have read and agree to our Terms & Conditions. &nbsp;
+                    <input type="checkbox" id="terms" name="terms" value="checked" required />
+                    
+                    <p></p>
+
+                    <input type="submit" name="" value="Submit &raquo;" class="submit">
+                </form>
+            </div>
         </section>
+
+        <script language="javascript">
+            function submitForm() 
+            {
+                console.log("SUBMIT FORM")
+                if (validForm()) {
+                    var dog = document.getElementById("dog").value
+                    dog = dog.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;')
+                    var firstName = document.getElementById("firstName").value 
+                    firstName = firstName.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;')
+
+                    var message = "<p>" + firstName + ", thank you for your interest in " + dog + "! We will be in touch shortly.</p>"
+                    
+                    document.getElementById("adopt-form").innerHTML = "<p>" + firstName + ", thank you for your interest in " + dog + "! We will be in touch shortly.</p>"
+                    document.getElementById("adopt-form").setAttribute("style", "text-align: center")
+                } else {
+                    alert("Please fill out all required fields.")
+                }
+                
+            }
+
+            function validForm()
+            {
+                console.log("CALLED")
+                var dog = document.getElementById("dog").value
+                var firstName = document.getElementById("firstName").value 
+                var lastName = document.getElementById("lastName").value 
+                var email = document.getElementById("email").value 
+                var phone = document.getElementById("phone").value 
+                var address = document.getElementById("address").value 
+                var city = document.getElementById("city").value 
+                var state = document.getElementById("state").value 
+                var zip = document.getElementById("zip").value 
+                var yes = document.getElementById("yes")
+                var no = document.getElementById("no")
+                var terms = document.getElementById("terms") 
+
+                if (dog == "") {
+                    alert("Please specify the dog you would like to adopt.")
+                    return false;
+                }
+                if (firstName == "") {
+                    alert("First name must be filled out");
+                    return false;
+                }
+                if (lastName == "") {
+                    alert("Last name must be filled out.");
+                    return false;
+                }
+                if (email == "" || !email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/im)) {
+                    alert("Please enter a valid email address.");
+                    return false;
+                }
+                if (phone == "" || !phone.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im)) {
+                    alert("Please enter a valid phone number.");
+                    return false;
+                }
+                if (address == "") {
+                    alert("Address must be filled out.");
+                    return false;
+                }
+                if (city == "") {
+                    alert("City must be filled out.");
+                    return false;
+                }
+                if (state == "") {
+                    alert("State must be filled out.");
+                    return false;
+                }
+                if (zip == "") {
+                    alert("Zip code must be filled out.");
+                    return false;
+                }
+                if (!(yes.checked || no.checked)) {
+                    alert("Please specify if you have any pets.");
+                    return false;
+                }
+                if (!terms.checked) {
+                    alert("Please agree to our Terms & Conditions.");
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+        </script>
+
         <footer>
            &#169; Copyright 2020 BDE
         </footer>
