@@ -5,34 +5,6 @@
         <link rel="stylesheet" href="donate.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset = "UTF-8" />
-        <script language="javascript">
-
-            window.onload=function()
-            {
-                document.getElementById("submit").onclick =
-
-                    function() 
-                    {
-                        if (validateForm()) {
-
-                            var amount = document.donate_form.amount.value;
-                            var donor = document.donate_form.name.value;
-
-                            alert("CONFIRMATION: " + donor + ", you donated $" + amount + ", thanks!");
-                        }
-                    }
-
-            }
-
-            function validateForm() {
-                var amount = document.donate_form.amount.value;
-                var donor = document.donate_form.name.value;
-                if (amount == "" || donor == "") {
-                    alert("Please complete the form before submitting!");
-                    return false;
-                } return true;
-            } 
-        </script>
     </head>
     <style>
         body{
@@ -55,33 +27,56 @@
             <a class="active" href="donate.html">Donate</a>
             <a href="contact.html">Contact Us</a>
         </div>
+        <script>
+            function sumbit_form()
+            {
+                document.getElementById("donate_form").setAttribute("hidden", "");
+                document.getElementById("donate_now").setAttribute("hidden", "");
+                document.getElementById("dogPhoto").removeAttribute("hidden");
+                document.getElementById("thanks").removeAttribute("hidden");
+
+                var donor_info = [];
+                donor_info[0] = document.donate_form.amount.value;
+                donor_info[1] = document.donate_form.name.value;
+                donor_info[2] = document.donate_form.address.value;
+                var message = "CONFIRMATION: " + donor_info[1] + ", you donated $" + donor_info[0] + 
+                              " (Billing address: " + donor_info[2] + ").";
+                document.getElementById("thanks_message").innerHTML = message;          
+                event.preventDefault();
+            }
+        </script>
         <section class="firstBlock">
-            <h2>Donate now</h2>
-            <img src="../images/dog_donate.jpg" alt="dog in leaves. pc: atlatnic_lost" class="dogPhoto">
-            <form name="donate_form">
+            <div id="thanks" hidden>
+                <h2>Thanks!</h2>
+                <p id="thanks_message"></p>
+                
+            </div>
+            <h2 id="donate_now">Donate now</h2>
+            <img src="../images/dog_donate.jpg" alt="dog in leaves. pc: atlatnic_lost" id="dogPhoto" class="dogPhoto" hidden>
+            <form name="donate_form" id="donate_form" onsubmit="sumbit_form()">
                 Amount:<br/>
-                <input type="radio" id="10" name="amount" value="10">
+                <input type="radio" name="amount" value="10" required>
                 <label for="10">$10</label><br/>
-                <input type="radio" id="25" name="amount" value="25">
+                <input type="radio" name="amount" value="25" required>
                 <label for="25">$25</label><br/>
-                <input type="radio" id="50" name="amount" value="50">
+                <input type="radio" name="amount" value="50" required>
                 <label for="25">$50</label><br/>
-                <input type="radio" id="100" name="amount" value="100">
+                <input type="radio" name="amount" value="100" required>
                 <label for="100">$100</label><br/>
-                <input type="radio" id="500" name="amount" value="500">
+                <input type="radio" name="amount" value="500" required>
                 <label for="500">$500</label><br/>
-                <input type="radio" id="1000" name="amount" value="1000">
+                <input type="radio" name="amount" value="1000" required>
                 <label for="500">$1000 (B.D.E. Donor Status - get your picture in our front hallway!)</label><br/>
                 <br/><br/>
                 Billing information:<br>
-                Name: <input type="text" id="name" class="billing" name="name"><br/>
-                Address: <input type="text" id="address" class="billing" name="address"><br/>
-                Zip code: <input type="text" id="zip" class="billing" name="zip"><br/>
-                Credit card number: <input type="text" id="card_no" class="billing" name="card_no">
-                CVV: <input type="text" id="cvv" class="billing" name="cvv"><br/>
-                Expiration date: <input type="text" id="cvv" class="billing" name="cvv" placeholder="MM/YYYY"><br/>
+                Name: <input type="text" class="billing" name="name" required><br/>
+                Address: <input type="text" name="address" required><br/>
+                Zip code: <input type="text" required><br/>
+                Credit card number: <input type="text" required>
+                CVV: <input type="text" required><br/>
+                Expiration date: <input type="text" placeholder="MM/YYYY" required><br/>
                 <br/><br/>
-                <input type="button" id="submit" class="submit" value="Submit">
+                <input type="submit" class="submit" value="Submit »">
             </form>
         </section>
         <footer>
