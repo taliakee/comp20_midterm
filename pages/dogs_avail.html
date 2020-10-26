@@ -44,6 +44,35 @@
             font-size: 14px;
         }
 
+        .adopt-link { 
+            background-color: #BFA082;
+            color: #2A2F3F;
+            margin-top: 2em;
+            margin-left: 7em;
+            margin-right: 7em;
+            margin-bottom: 2em;
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+            padding-left: 3em;
+            padding-right: 3em;
+            text-align: center;
+            font-family: 'Roboto';
+        }
+
+        #adopt-button {
+            background-color: #FAF3F6;
+            color: #2A2F3F;
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Roboto';
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
             @media screen and (max-width: 500px) {
             .column {
@@ -69,6 +98,25 @@
             <a href="donate.html">Donate</a>
             <a href="contact.html">Contact Us</a>
         </div>
+
+        <script language="javascript">
+        window.onload =
+        function()
+        {
+            document.getElementById("adopt-button").onclick =
+            function()
+            {
+            	window.location.href = "adopt_dog.html";
+            }
+        }
+        </script>
+
+        <div class="adopt-link">
+            Interested in adopting a dog? Please fill out our adopt a dog form!
+            <br /><br />
+            <input type="button" value="Adopt a Dog &raquo;" id="adopt-button">
+        </div>
+
         <script>
             function show_info(dog_num) {
                 var x = document.getElementById("dog" + dog_num);
